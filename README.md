@@ -4,6 +4,25 @@ A **Claude Code skill** that generates photorealistic product mockups where your
 
 Uses **Google Gemini Nano Banana Pro** with image-reference input to preserve your **exact logo** while integrating it with proper 3D perspective, lighting, curvature, and material properties.
 
+## Demo
+
+All mockups below were generated from the **same sample logo** using this skill — the exact logo is preserved across every product surface:
+
+### Input Logo
+
+<p align="center">
+  <img src="examples/sample-logo-acme.png" alt="Sample Logo — ACME Studio" width="200" />
+</p>
+
+### Generated Mockups
+
+| Laptop Sticker | Water Bottle | T-Shirts |
+|:-:|:-:|:-:|
+| ![Laptop](examples/demo-mockups/demo-laptop-mockup.png) | ![Bottle](examples/demo-mockups/demo-bottle-mockup.png) | ![T-Shirts](examples/demo-mockups/demo-tshirt-mockup.png) |
+| `--product laptop` | `--product bottle` | `--product tshirt` |
+
+> The logo follows each surface's 3D geometry: perspective tilt on the laptop lid, cylindrical curvature wrap on the bottle, and fabric texture on the t-shirts.
+
 ## What Is a Claude Code Skill?
 
 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) is Anthropic's CLI for AI-powered development. **Skills** are reusable knowledge + scripts that Claude Code can activate automatically when relevant. When you install this skill, Claude will automatically use it whenever you ask for product mockups.
